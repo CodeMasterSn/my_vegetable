@@ -1,0 +1,421 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'couriel', sans-serif;
+}
+
+/* we're placing the background image in the body */
+body{
+    background: url('./image/pexels-photo-2109499.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* button return to the top */
+.return-top{
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    right: 25px;
+    z-index: 111;
+    scroll-behavior: smooth;
+}
+.return-top i{
+    font-size: 35px;
+    border: 1px solid lightgreen;
+    border-radius: 50px;
+    outline: none;
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+/* stylising navbar */
+nav{
+    width: 100%;
+    height: 90px;
+    background: transparent;
+    position: fixed;
+    padding: 0px 120px;
+    line-height: 95px;
+    z-index: 99;
+    transition: .15s;
+}
+
+/* sticky navbar */
+.sticky-nav{
+    background: black;
+}
+
+nav .logo h1{
+    font-family: 'couriel';
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+}
+
+nav .logo .veg{
+    color: lightgreen;
+    font-family: 'couriel';
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav .logo .icon{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: -7rem;
+    margin-left: 14rem;
+}
+
+nav ul{
+    float: right;
+    margin-top: -9%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0px 35px;
+    font-family: 'couriel';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* apply a style in the button subscribe */
+
+nav .button-sub{
+    border: 3px solid white;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    transition: .15s;
+}
+
+nav .button-sub:hover{
+   border-color: lightgreen;
+}
+
+
+/* start stylising the header */
+.header p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 37px;
+    text-align: center;
+}
+
+.header .border-line{
+    background: white;
+    border: 3px solid white;
+    width: 60px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* stylising the next part */
+.text-about{
+    position: absolute;
+    margin-top: 55%;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 115px;
+    box-shadow: 6px 10px 25px 2px black;
+}
+
+.text-about .text span{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'courgette';
+    color: black;
+}
+
+.text-about .text{
+    width: 100%;
+    color: lightslategray;
+    margin-left: 4%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    opacity: 2;
+}
+
+.text-about .image-text img{
+    width: 355px;
+    height: auto;
+    margin: 5%;
+}
+
+.text-about .text h1{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+
+/* apply style for the next part of our project */
+.comment-part{
+    position: absolute;
+    background: lightgrey;
+    margin-top: 151%;
+    width: 100%;
+    padding: 115px;
+    border-top: 2px solid black;
+}
+
+.comment-part div{
+    text-align: center;
+    line-height: 45px;
+}
+
+.comment-part .first-title h1{
+    font-family: 'couriel';
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.comment-part .first-title span{
+    font-family: 'couriel', 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.comment-part .form{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.comment-part .form input{
+    width: 450px;
+    padding: 23.5px;
+    border: 2px solid lightslategrey;
+    border-radius: 5px;
+    background: white;
+    font-family: 'couriel';
+    font-size: 17px;
+}
+
+.comment-part .form .btn-comment{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    width: 180px;
+    margin-left: 2rem;
+    padding: 22px;
+    font-family: 'couriel';
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+
+.comment-part .form .btn-comment:hover{
+    background-color: lightgreen;
+    color: black;
+    font-weight: 800;
+}
+
+.comment-part .testimonials .testimonials-one{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.comment-part .testimonials .testimonials-two{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.comment-part .testimonials .testimonials-one img{
+    width: 145px;
+    height: auto;
+    margin-left: 15rem;
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.comment-part .testimonials .testimonials-two img{
+    width: 220px;
+    height: 100%;
+    margin-left: 13rem;
+    border: 5px solid white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+
+.comment-part .testimonials .profile h1 {
+    display: inline-block;
+    margin-left: -12rem;
+    margin-top: 2.5rem;
+    font-family: 'couriel';
+    font-size: 36px;
+}
+
+.comment-part .testimonials .profile-two{
+    margin-top: -2.5rem;
+}
+
+.comment-part .profile-two h1{
+    margin-left: -13.5rem !important;
+}
+
+.comment-part .testimonials .profile span{
+    font-family: 'couriel';
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: rgb(82, 80, 80);
+}
+
+.comment-part .testimonials .profile p{
+    width: 65%;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+/* apply a style for subscribe part */
+.subscribe-part{
+    position: absolute;
+    background: white;
+    margin-top: 240%;
+    width: 100%;
+    padding: 72px;
+}
+
+
+.subscribe-part div{
+    text-align: center;
+    line-height: 45px;
+}
+
+.subscribe-part .first-title h1{
+    font-family: 'couriel';
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 4rem;
+}
+
+.subscribe-part .first-title span{
+    font-family: 'couriel', 'poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.subscribe-part .form{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.subscribe-part .form input{
+    width: 450px;
+    padding: 23.5px;
+    border: 3px solid lightslategrey;
+    border-radius: 5px;
+    background: white;
+    font-family: 'couriel';
+    font-size: 17px;
+}
+
+.subscribe-part .form .btn-comment{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    width: 180px;
+    margin-left: 2rem;
+    padding: 22px;
+    font-family: 'couriel';
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.subscribe-part .form .btn-comment:hover{
+    background: lightgreen;
+    color: black;
+    font-weight: 700;
+}
+
+/* footer code */
+footer{
+    position: absolute;
+    margin-top: 275%;
+    width: 100%;
+    height: 30vh;
+    padding: 60px;
+    background: black;
+}
+
+
+footer .navbar-footer{
+    width: 100%;
+    height: auto;
+    margin-top: -25px;
+    padding: 0px 10px;
+    line-height: 95px;
+}
+
+footer .navbar-footer ul li{
+    display: inline-block;
+    margin: 15px;
+    list-style: none;
+}
+
+footer .navbar-footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'couriel';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+footer .icon-social{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 65%;
+    margin-top: -7.7%;
+}
+
+footer .icon-social i{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+
+footer .icon-social i:hover{
+    color: lightgreen;
+}
